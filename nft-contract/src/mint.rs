@@ -5,9 +5,9 @@ impl Contract {
     #[payable]
     pub fn nft_mint(
         &mut self,
-        token_id: Option<TokenId>,
+        token_id: TokenId,
         metadata: TokenMetadata,
-        receiver_id: Option<AccountId>,
+        receiver_id: AccountId,
     ) {
         /*
             FILL THIS IN
